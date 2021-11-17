@@ -1,0 +1,65 @@
+# Graph Databases
+
+Riya Dennis
+
+## References
+
+ - Graph Databases in Action(By Dave Bechberger and Josh Perryman)
+ - The Practitioner's Guide to Graph Data(By Denise Gosnell and Matthias Broecheler)
+
+## Database evolution over years
+.image Database_Evolution.png 300 600
+
+Three objectives for retrieving records from database management systems:
+
+- Using a primary key
+
+- Scanning all the records in a sequential order
+
+- Navigating links from one record to another
+
+## What is a Graph?
+A graph is a representation of data with two distinct elements: vertices and edges.
+- Vertex (pl. vertices) represents a concept or entity in data.
+    For a vertex, all vertices that are adjacent to are said to be within the **neighborhood** of a vertex
+- Edge represents a relationship or link from one vertex to another.
+    In graph data, **distance** refers to the number of edges that you have to walk through to get from one vertex to another.
+- Degree
+    A vertex’s degree is the number of edges that are incident to (i.e., touch) the vertex.
+- In-degree
+		A vertex’s in-degree is the total number of incoming edges that are incident to (or touch) the vertex.
+- Out-degree
+	A vertex’s out-degree is the total number of outgoing edges that are incident to (or touch) the vertex.
+Formatting:
+
+
+## Types of vertices
+- Leaf:
+	In graph theory, a vertex with a degree of one is called  a leaf.
+- Supernodes
+To a graph database practitioner, vertices of extremely high degree (>100,000 edges) are known as supernodes.
+
+## Graph Schema Language
+
+- A vertex label is a set of objects that are semantically homogeneous. That is, a vertex label represents a class of objects that share the same relationships and attributes.
+
+- An edge label names the type of relationship between vertex labels in your database schema.
+
+.image Edge-Label.png 100 400
+A _property_ describes features of a vertex label or an edge label, such as names, dates, or other descriptive features.
+
+## There are two ways in which you can model the direction of an edge: directed and bidirectional.
+- Directed
+    A directed edge goes one way: from one vertex label to the other vertex label.
+- Bidirectional
+A bidirectional or bidirected edge goes in both directions between the vertex label
+- Self-referencing
+A self-referencing edge is where the edge's domain and range are the same vertex label.
+(_The **domain** of an edge label is the vertex label from which the edge label originates or starts.
+The **range** of an edge label is the vertex label to which the edge label points or ends._)
+
+## Entertainment Graph
+.image Entertainment-Graph.png 400 600
+
+## Graph Thinking
+.image Graph-Thinking.png 500 700

@@ -13,7 +13,7 @@ import (
 func (r *queryResolver) Countries(ctx context.Context) ([]*model.Country, error) {
 	return []*model.Country{
 		{
-			 "United Kingdom",
+			"United Kingdom",
 		},
 		{
 			"United States",
