@@ -6,6 +6,43 @@ type Country {
   name: String!
 }
 
+type Person {
+  id: ID!
+  FirstName: String!
+  LastName: String!
+  DateOfBirth: String!
+  Country: String
+  Spouse: Person
+  Father: Person
+  Mother: Person
+  Children: [Person]
+}
+
+type Work {
+  id: ID!
+  Name: String
+  Country: String
+  Industry: String
+  CEO: Person
+  Employee: [Person]
+}
+
+type Family{
+  id: ID!
+  Name: String
+  Country: String
+  Members: [Member]
+}
+
+type Member{
+  id: ID!
+  Type: String
+  Person: Person
+}
+
+######################################################################################################
+# GraphQL Queries and mutations
+######################################################################################################
 type Query {
   countries: [Country!]!
 }
