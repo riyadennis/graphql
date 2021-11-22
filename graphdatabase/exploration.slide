@@ -63,3 +63,22 @@ The **range** of an edge label is the vertex label to which the edge label point
 
 ## Graph Thinking
 .image Graph-Thinking.png 500 700
+
+## Using graph data to solve data management problems
+Main difference in the way we solve data problems using graph thinking is by modeling, storing
+and retrieving relationships with in the data.
+
+We need to shift from our relational way thinking where we focused on organising entities to organising relationships.
+Data need to be organised according to its relationships.
+
+##Questions to ask when we do graph modelling:
+- Should This Be a Vertex or an Edge?
+    ans:  - If you want to start your traversal on some piece of data, make that data a vertex.
+          - If you need the data to connect concepts, make that data an edge.
+          - Vertex-Edge-Vertex should read like a sentence or phrase from your queries.
+          - Nouns and concepts should be vertex labels. Verbs should be edge labels.
+
+## Knowledge Graph
+Terms to remember:
+Data Fabric: When data from all over the enterprise, and even the industry, is woven together to create a
+whole that is greater than the sum of its parts, we call this a data fabric.
